@@ -1,2 +1,398 @@
+$m: 'Montserrat',
+sans-serif;
 
+$o: 'Open Sans',
+sans-serif;
 
+$u: 'Ubuntu',
+sans-serif;
+
+$p: 'Poppins',
+sans-serif;
+
+$c: 'Cabin',
+sans-serif;
+
+.no-style {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+@media (min-width:768px) {
+    .flex-center {
+        display: flex;
+        align-items: center;
+    }
+    .flex {
+        display: flex;
+    }
+}
+
+/*=============================== Header ========================*/
+
+.header {
+    padding: 11px 0;
+    background: #565656;
+    .navbar {
+        margin: 0;
+        background: none;
+        border: none;
+    }
+    .navbar-brand {
+        height: auto;
+    }
+    .navbar-nav {
+        li {
+            a {
+                font-family: $m;
+                font-weight: 500;
+                color: #fff;
+                padding: 0 9px;
+                &:hover {
+                    color: #38a113;
+                }
+            }
+        }
+    }
+    .icon {
+        li {
+            display: inline-block;
+            margin: 0 10px;
+            a {
+                color: #fff;
+                font-family: $m;
+                font-weight: 500;
+                text-decoration: none;
+            }
+            a.log {
+                background: #38a113;
+                padding: 8px 20px;
+                text-transform: uppercase;
+                &:hover {
+                    background: #999999;
+                }
+            }
+        }
+    }
+}
+
+/*=============================== Slider ========================*/
+
+.slider {
+    .background {
+        background-size: cover !important;
+        font-family: $o;
+        .container {
+            position: relative;
+            min-height: 480px;
+        }
+        .content {
+            position: absolute;
+            left: 30px;
+            bottom: 100px;
+            width: 100%;
+        }
+        h2 {
+            margin: 0;
+            background: #222222;
+            color: #fefefe;
+            text-transform: uppercase;
+            font-size: 40px;
+            display: inline-block;
+            padding: 5px 10px;
+            margin-bottom: 8px;
+            position: relative;
+            padding-right: 54px;
+            animation-duration: 2s;
+            &:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border: 0 solid transparent;
+                border-left-width: 54px;
+                border-right-width: 20px;
+                border-top: 54px solid #222222;
+                top: 0;
+                right: -20px;
+            }
+        }
+        h3 {
+            margin: 0;
+            background: #38a113;
+            color: #fff;
+            font-weight: 900;
+            font-size: 35px;
+            display: inline-block;
+            text-transform: uppercase;
+            padding: 9px 10px;
+            position: relative;
+            padding-right: 56px;
+            min-width: 591px;
+            animation-delay: 1s;
+            animation-duration: 2s;
+            &:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border: 0 solid transparent;
+                border-left-width: 56px;
+                border-right-width: 20px;
+                border-top: 56px solid #38a113;
+                top: 0;
+                right: -20px;
+            }
+        }
+    }
+    .carousel-control {
+        .fas {
+            position: absolute;
+            top: 50%;
+            width: 60px;
+            height: 60px;
+            border: 5px solid #111111;
+            color: #111111;
+            line-height: 50px;
+            font-size: 30px;
+            margin-top: -30px;
+        }
+        .fas.fa-angle-left {
+            left: 45px;
+        }
+        .fas.fa-angle-right {
+            right: 45px;
+        }
+    }
+    .carousel-indicators {
+        li {
+            height: 20px;
+            width: 20px;
+            border: 3px solid transparent;
+            background: transparent;
+            padding: 4px;
+            margin: 0;
+            span {
+                width: 6px;
+                height: 6px;
+                background: #222222;
+                border-radius: 50%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        li.active {
+            border-color: #3aa115;
+            span {
+                background: #3aa115;
+            }
+        }
+    }
+}
+
+/*=============================== tranding ========================*/
+
+.tranding {
+    padding-top: 115px;
+    padding-bottom: 100px;
+    h2 {
+        margin-bottom: 10px;
+    }
+    .content {
+        font-family: $u;
+        padding: 15px 0;
+        img {
+            width: 100%;
+        }
+        a.title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #666666;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .btn {
+            background: #999999;
+            color: #fff;
+            margin-right: 10px;
+            border: 1px solid transparent;
+            transition: .5s;
+            &:last-child {
+                margin-right: 0;
+            }
+            &:hover {
+                background: #38a014;
+                color: #fff;
+                border-color: #38a014;
+            }
+        }
+        .comment {
+            border-color: #bcdfff;
+            color: #005db4;
+            background: transparent;
+        }
+        p {
+            font-size: 15px;
+            color: #777777;
+            line-height: 1.466666666666667;
+            margin: 0;
+            margin-top: 15px;
+        }
+    }
+}
+
+.tranding-head {
+    h2 {
+        margin-top: 0;
+        font-family: $u;
+        font-size: 30px;
+        color: #333333;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+/*=============================== tranding ========================*/
+
+.alert-section {
+    .tranding-head {
+        padding-bottom: 40px;
+    }
+    .content {
+        font-family: $o;
+        padding: 15px 0;
+        &:after {
+            content: "";
+            display: block;
+            height: 5px;
+            border: 1px solid transparent;
+            border-top-color: #d9d9d9;
+            border-bottom-color: #d9d9d9;
+        }
+    }
+    .item-head {
+        .date {
+            width: 65px;
+            height: 75px;
+            float: left;
+            background: #38a014;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+            margin-right: 20px;
+            span {
+                display: block;
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+        }
+        .title {
+            float: left;
+            width: calc (100& - 85px);
+            a {
+                font-size: 20px;
+                font-weight: 600;
+                color: #1d1d1d;
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+        }
+        .like-comment {
+            a {
+                font-size: 13px;
+                color: #a9a9a9;
+                margin-right: 15px;
+                display: inline-block;
+                text-decoration: none;
+                &:last-child {
+                    margin-right: 0;
+                }
+                i {
+                    font-size: 16px;
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+    p {
+        font-size: 14px;
+        color: #8b8b8b;
+        line-height: 1.857142857142857;
+        margin: 30px 0;
+    }
+    .btn {
+        border-radius: 0;
+        background: #38a014;
+        color: #fff;
+        padding: 6px 25px;
+        margin-bottom: 27px;
+        border: 2xp solid transparent;
+        transition: .5s;
+        &:hover,
+        &:focus {
+            background: transparent;
+            border-color: #38a014;
+            color: #000;
+        }
+        i {
+            margin-left: 5px;
+        }
+    }
+}
+
+/*=============================== resource ========================*/
+
+.head {
+    h2 {
+        font-size: 36px;
+        font-family: $p;
+        color: #1a1a1a;
+        margin: 0;
+        font-weight: 500;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 60px;
+        text-transform: uppercase;
+        &:after {
+            content: "";
+            width: 60px;
+            height: 6px;
+            background: #38a014;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+        }
+    }
+}
+
+.head.border-center h2::after {
+    right: 0;
+    margin: 0 auto;
+}
+
+.resource {
+    background: #fdfdfd;
+    padding: 60px 0;
+    .content {
+        padding: 15px 0;
+        img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        a {
+            font-family: $p;
+            font-weight: 500;
+            font-size: 18px;
+            color: #303030;
+        }
+    }
+}
