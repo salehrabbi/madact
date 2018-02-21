@@ -2,6 +2,16 @@
     desktop/leptop layout.
 ===============================*/
 @media only screen and (min-width:991px) and (max-width:1199px) {
+.navbar-brand > img {
+    max-height: 50px;
+}
+.navbar-brand {
+    padding: 0;
+}
+.header .navbar-nav li a {
+    padding: 0 7px;
+    font-size: 14px;
+}
 
 
 
@@ -9,35 +19,94 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-	
 }
 
 
 /*==============================
     Tablet Layout
 =============================*/
-@media only screen and (min-width:768px) and (max-width:990px) {}
+@media only screen and (min-width:768px) and (max-width:990px) {
+.discussion .head h2 {
+    margin-bottom: 70px;
+}
+.head {
+    margin-top: 50px;
+}
+.carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
+    max-width: inherit;
+    max-height: 50px;
+}
+.tranding {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.slider .background .content {
+    left: 90px;
+}
+
+
+
+}
 
 
 /*===================================
     normal/small mobile layout.
 ===================================*/
-@media only screen and (max-width:767px) {}
+@media only screen and (max-width:767px) {
+.navbar-toggle {
+    margin-top: 25px;
+}
+.blog-pagination li a {
+    padding: 9px 15px;
+}
+.icon {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.slider .background h2{
+	font-size: 20px;
+}
+.slider .background h3 {
+    margin: 20px 0 0;
+    font-size: 16px;
+    min-width: inherit;
+}
+.carousel-control{
+	display: none;
+}
+.slider .background {
+    height: 300px;
+}
+.slider .background .content {
+    position: relative;
+    left: 0px;
+    width: 100%;
+    top: 80px;
+}
+
+
+
+
+
+
+
+}
 
 
 /*==============================
     wide mobile layout
 ================================*/
-@media only screen and (min-width:480px) and (max-width:767px) {}
+@media only screen and (min-width:480px) and (max-width:767px) {
+.slider .background h2 {
+    font-size: 30px;
+}
+.slider .background h3 {
+    font-size: 25px;
+}
+
+
+
+
+}
 
 
