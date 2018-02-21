@@ -508,7 +508,7 @@
   border-color: #38a113;
 }
 
-
+/* rozy code*/
 .poll-social a {
   color: #888888;
   font-size: 18px;
@@ -518,4 +518,18 @@
 }
 .poll-social a:hover {
   color: #38A113;
+}
+
+.boxed-btn {
+  display: inline-block;
+  color: #fff;
+  background: #38A113;
+  padding: 8px 30px;
+  font-weight: 600;
+}
+.content .boxed-btn {
+  margin-top: 35px;
+}
+.tranding .content {
+    margin-bottom: 30px;
 }
