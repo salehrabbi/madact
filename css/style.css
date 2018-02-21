@@ -583,6 +583,7 @@
   margin: 0;
   padding: 0;
   background: #F4F4F4;
+  padding-left: 20px;
 }
 .bell-content span {
   color: #38A113;
@@ -626,3 +627,19 @@ li{
   margin: 0;
   padding-top: 10px;
 }
+.number {
+    background: #38A015;
+    color: #fff;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 18px;
+    position: absolute;
+    top: -8px;
+    right: -12px;
+}
+
+
+
