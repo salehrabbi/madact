@@ -428,3 +428,87 @@
 .discussion a.content:hover h3 {
   color: #fff;
 }
+
+/*=============================== poll-form ========================*/
+.poll-form {
+  font-family: "Montserrat", sans-serif;
+  color: #666666;
+}
+.poll-form h4 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  position: relative;
+}
+.poll-form h4:before {
+  content: "";
+  height: 12px;
+  width: 12px;
+  border-radius: 4px;
+  background: #38a113;
+  position: absolute;
+  left: -16px;
+  top: 9px;
+}
+.poll-form .buttons {
+  margin-top: 35px;
+}
+.poll-form p {
+  margin: 0;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.poll-form form input {
+  display: none;
+}
+.poll-form form label {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+}
+.poll-form form span {
+  height: 15px;
+  width: 15px;
+  border: 2px solid #38a113;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin-right: 8px;
+  bottom: -1px;
+}
+.poll-form form input[type="radio"]:checked + label span:after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #38a113;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  margin-top: -2.5px;
+}
+.poll-form form .button {
+  background: #38a113;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  border: 3px solid transparent;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 40px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.poll-form form .button:hover {
+  background: transparent;
+  color: #38a113;
+  border-color: #38a113;
+}
+
+.poll-social {
+  color: #888888;
+  font-size: 18px;
+}
