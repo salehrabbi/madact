@@ -508,7 +508,14 @@
   border-color: #38a113;
 }
 
-.poll-social {
+
+.poll-social a {
   color: #888888;
   font-size: 18px;
+  display: inline-block;
+  padding: 20px;
+  padding-left: 0;
+}
+.poll-social a:hover {
+  color: #38A113;
 }
