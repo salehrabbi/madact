@@ -572,7 +572,7 @@
   padding: 5px;
   position: absolute;
   right: -30px;
-  top: 90px;
+  top: 55px;
   width: 300px;
   z-index: 99;
   transition: .3s;
@@ -611,7 +611,7 @@
 li{
   position: relative;
 }
-.bell-icon:hover .bell-content {
+.bell-content.active{
     opacity: 1;
     visibility: visible;
     top: 55px;
@@ -659,10 +659,17 @@ li{
   position: absolute;
   width: 300px;
   right: 270px;
-  top: 111px;
+  top: 100px;
   opacity: 0;
   visibility: hidden;
   transition: .3s;
+
+}
+.search-form.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 9;
+  top: 111px;
 }
 
 

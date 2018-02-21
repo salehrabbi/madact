@@ -34,4 +34,16 @@
         doAnimations($animatingElems);
     });
 
+
+    $(".bell-icon").on('click', function() {
+        $(".bell-content").toggleClass("active");
+    });
+    $(".search-icon").on('click', function() {
+        $(".search-form").toggleClass("active");
+    });
+
+
+
+
+
 })(jQuery);

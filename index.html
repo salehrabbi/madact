@@ -24,7 +24,16 @@
 </head>
 
 <body>
-    <!--   /*=============================== Header Here is a change ========================*/-->
+ <!--   /*=============================== Header ========================*/-->
+
+    
+    <div class="search-form">
+        <form action="index.html">
+            <input type="text" placeholder="search keywords" required>
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+
     <header class="header">
         <div class="container">
             <div class="row flex-center">
@@ -59,8 +68,22 @@
                 <div class="col-md-3">
                     <div class="icon">
                         <ul class="no-style text-center">
-                            <li><a href="contact.html"><i class="fas fa-bell"></i></a> <span class="number">5</span></li>
-                            <li><a href="pricing.html"><i class="fas fa-search"></i></a></li>
+                            <li class="bell-icon"><a href="#"><i class="fas fa-bell"></i></a>    <span class="number">5</span>
+                                <div class="bell-content">
+                                    <ul>
+                                        <li><a href="#"><span>Jeff Jefferson</span> commented on yoy link <strong>"Chris like your status"</strong>.</a>
+                                            <p><i class="fa fa-heart"></i> 10 hours ago</p>
+                                        </li>
+                                        <li><a href="#"><span>Jeff Jefferson</span> and <span>Christopherson</span>Chris like your status.</a>
+                                            <p><i class="fa fa-heart"></i> 10 hours ago</p>
+                                        </li>
+                                        <li><a href="#"><span>Jeff Jefferson</span> and <span>Christopherson</span>Chris like your status.</a>
+                                            <p><i class="fa fa-heart"></i> 10 hours ago</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="search-icon"><a href="#"><i class="fas fa-search"></i></a></li>
                             <li><a class="log" href="#">logout</a></li>
                         </ul>
                     </div>
@@ -68,6 +91,8 @@
             </div>
         </div>
     </header>
+
+    
     <!--    /*=============================== Slider ========================*/-->
     <section class="slider">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
