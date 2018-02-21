@@ -13,7 +13,12 @@
     font-size: 14px;
 }
 
-
+.search-form {
+    top:35px;
+}
+.search-form.active {
+    top: 47px;
+}
 
 
 
@@ -43,6 +48,25 @@
 .slider .background .content {
     left: 90px;
 }
+.icon {
+    margin-bottom: 20px;
+}
+.navbar-toggle{
+	margin-top: 25px;
+}
+.search-form {
+    top: 45px;
+}
+.search-form.active {
+    top: 54px;
+}
+
+
+
+
+
+
+
 
 
 

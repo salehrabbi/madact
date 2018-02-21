@@ -658,8 +658,8 @@ li{
 .search-form {
   position: absolute;
   width: 300px;
-  right: 270px;
-  top: 100px;
+  right:0px;
+  top: 55px;
   opacity: 0;
   visibility: hidden;
   transition: .3s;
@@ -669,7 +669,7 @@ li{
   opacity: 1;
   visibility: visible;
   z-index: 9;
-  top: 111px;
+  top: 67px;
 }
 
 
