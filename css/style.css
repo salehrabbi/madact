@@ -533,3 +533,31 @@
 .tranding .content {
     margin-bottom: 30px;
 }
+
+
+.blog-pagination {
+  margin-top: 30px;
+}
+.blog-pagination li a {
+  color: #999999;
+  font-size: 15px;
+  border: 1px solid #E0E0E0;
+  border-top: transparent;
+  padding: 10px 25px;
+  border-bottom: 2px solid #f1f1f1;
+  font-weight: 700;
+}
+.blog-pagination li:first-child a, .blog-pagination li:last-child a {
+  background: #999999;
+  color: #fff;
+  border-radius: 20px 0 0px 20px;
+}
+.blog-pagination li:last-child a {
+  border-radius: 0 20px 20px 0px;
+}
+.blog-pagination li a {
+}
+.blog-pagination li a:hover {
+  background: #38A113;
+  color: #fff;
+}
