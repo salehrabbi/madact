@@ -27,14 +27,9 @@
  <!--   /*=============================== Header ========================*/-->
 
     
-    <div class="search-form">
-        <form action="index.html">
-            <input type="text" placeholder="search keywords" required>
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-    </div>
 
-    <header class="header">
+
+    <header class="header navigation-bar is-visible" data-nav-status="toggle">
         <div class="container">
             <div class="row flex-center">
                 <div class="col-md-9 col-sm-8">
@@ -66,9 +61,9 @@
                     </nav>
                 </div>
                 <div class="col-md-3 col-sm-4">
-                    <div class="icon">
+                    <div class="icon clearfix">
                         <ul class="no-style text-center">
-                            <li class="bell-icon"><a href="#"><i class="fas fa-bell"></i></a>    <span class="number">5</span>
+                            <li class="bell-icon"><a href="javascript:void(0);"><i class="fas fa-bell"></i></a>    <span class="number">5</span>
                                 <div class="bell-content">
                                     <ul>
                                         <li><a href="#"><span>Jeff Jefferson</span> commented on yoy link <strong>"Chris like your status"</strong>.</a>
@@ -83,7 +78,14 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="search-icon"><a href="#"><i class="fas fa-search"></i></a></li>
+                            <li class="search-icon"><a class="show-item" href="javascript:void(0);"><i class="fas fa-search"></i></a>
+                                <div class="search-form">
+                                    <form action="index.html">
+                                        <input type="text" placeholder="search keywords" required>
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                    </form>
+                                </div>
+                            </li>
                             <li><a class="log" href="#">logout</a></li>
                         </ul>
                     </div>
@@ -94,72 +96,74 @@
 
     
     <!--    /*=============================== Slider ========================*/-->
-    <section class="slider">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"><span></span></li>
-                <li data-target="#myCarousel" data-slide-to="1"><span></span></li>
-                <li data-target="#myCarousel" data-slide-to="2"><span></span></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <div class="background" style="background: url(images/slider-1.jpg)">
-                        <div class="container">
-                            <div class="content">
-                                <div>
-                                    <h2 data-animation="animated bounceInRight">FIne THe Best</h2>
+    <section class="slider menu-marign">
+        <div class="container no-padding">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"><span></span></li>
+                    <li data-target="#myCarousel" data-slide-to="1"><span></span></li>
+                    <li data-target="#myCarousel" data-slide-to="2"><span></span></li>
+                </ol>
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="background" style="background: url(images/slider-1.jpg)">
+                            <div class="container">
+                                <div class="content">
+                                    <div>
+                                        <h2 data-animation="animated bounceInRight">FIne THe Best</h2>
+                                    </div>
+                                    <div>
+                                        <h3 data-animation="animated bounceInRight">news articles for you</h3>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3 data-animation="animated bounceInRight">news articles for you</h3>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="item">
+                        <div class="background" style="background: url(images/slider-1.jpg)">
+                            <div class="container">
+                                <div class="content">
+                                    <div>
+                                        <h2 data-animation="animated bounceInRight">FIne THe Best</h2>
+                                    </div>
+                                    <div>
+                                        <h3 data-animation="animated bounceInRight">news articles for you</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="item">
+                        <div class="background" style="background: url(images/slider-1.jpg)">
+                            <div class="container">
+                                <div class="content">
+                                    <div>
+                                        <h2 data-animation="animated bounceInRight">FIne THe Best</h2>
+                                    </div>
+                                    <div>
+                                        <h3 data-animation="animated bounceInRight">news articles for you</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="item">
-                    <div class="background" style="background: url(images/slider-1.jpg)">
-                        <div class="container">
-                            <div class="content">
-                                <div>
-                                    <h2 data-animation="animated bounceInRight">FIne THe Best</h2>
-                                </div>
-                                <div>
-                                    <h3 data-animation="animated bounceInRight">news articles for you</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="background" style="background: url(images/slider-1.jpg)">
-                        <div class="container">
-                            <div class="content">
-                                <div>
-                                    <h2 data-animation="animated bounceInRight">FIne THe Best</h2>
-                                </div>
-                                <div>
-                                    <h3 data-animation="animated bounceInRight">news articles for you</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <i class="fas fa-angle-left"></i>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <i class="fas fa-angle-right"></i>
+                        <span class="sr-only">Next</span>
+                      </a>
             </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <i class="fas fa-angle-left"></i>
-                    <span class="sr-only">Previous</span>
-                  </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <i class="fas fa-angle-right"></i>
-                    <span class="sr-only">Next</span>
-                  </a>
         </div>
     </section>
     <!--    /*=============================== tranding ========================*/-->
@@ -173,7 +177,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-12">
                     <div class="content">
                         <img src="images/blog-1.jpg" alt="">
                         <a href="#" class="title">READY FOR TRACK DAY</a>
@@ -184,7 +188,7 @@
                         <p>Ea ullum liber aperiri mi, impetus ate philosophia ad duo, quem regione ne ius. Vis quis lobortis dissentias ex, in du aft philosophia, malis necessitatibus no mei. Volumus sensibus qui ex, eum duis doming ad.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-12">
                     <div class="content">
                         <img src="images/blog-2.jpg" alt="">
                         <a href="#" class="title">READY FOR TRACK DAY</a>
@@ -195,7 +199,7 @@
                         <p>Ea ullum liber aperiri mi, impetus ate philosophia ad duo, quem regione ne ius. Vis quis lobortis dissentias ex, in du aft philosophia, malis necessitatibus no mei. Volumus sensibus qui ex, eum duis doming ad.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-12">
                     <div class="content">
                         <img src="images/blog-3.jpg" alt="">
                         <a href="#" class="title">READY FOR TRACK DAY</a>
@@ -264,7 +268,7 @@
             <div class="row">
                 <!--               /*=============================== discussion ========================*/-->
                 <div class="discussion clearfix">
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-sm-6">
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="head">
@@ -273,7 +277,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-12 col-md-6">
                                 <a href="#" class="content">
                                     <h3>IS NIGERIA UNITED BY CORRUPTION?</h3>
                                     <div>
@@ -283,7 +287,7 @@
                                     <p>In a resent interview a political stakeholder in Rivers State and stalwart of the Labour Party, Chie... </p>
                                 </a>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-12 col-md-6">
                                 <a href="#" class="content">
                                     <h3>IS NIGERIA UNITED BY CORRUPTION?</h3>
                                     <div>
@@ -293,7 +297,7 @@
                                     <p>In a resent interview a political stakeholder in Rivers State and stalwart of the Labour Party, Chie... </p>
                                 </a>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-12 col-md-6">
                                 <a href="#" class="content">
                                     <h3>IS NIGERIA UNITED BY CORRUPTION?</h3>
                                     <div>
@@ -303,7 +307,7 @@
                                     <p>In a resent interview a political stakeholder in Rivers State and stalwart of the Labour Party, Chie... </p>
                                 </a>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-12 col-md-6">
                                 <a href="#" class="content">
                                     <h3>IS NIGERIA UNITED BY CORRUPTION?</h3>
                                     <div>
@@ -315,7 +319,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="head">
@@ -364,19 +368,19 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-4">
                     <div class="content">
                         <img src="images/re-1.jpg" alt="">
                         <a href="#">Paid Bribe To Police Officer</a>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-4">
                     <div class="content">
                         <img src="images/re-2.jpg" alt="">
                         <a href="#">Paid Bribe To Police Officer</a>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-4">
                     <div class="content">
                         <img src="images/re-3.jpg" alt="">
                         <a href="#">Paid Bribe To Police Officer</a>
